@@ -1,0 +1,16 @@
+[versions]
+axionRelease = "1.20.1"
+kotlin = "2.2.10"
+ktlintGradle = "13.1.0"
+mcApi = "1.21.4"
+shadow = "9.1.0"
+spigot = "1.21.+"
+
+[plugins]
+axionRelease = { id = "pl.allegro.tech.build.axion-release", version.ref = "axionRelease"}
+kotlin = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin"}
+ktlint = { id = "org.jlleitschuh.gradle.ktlint", version.ref = "ktlintGradle"}
+shadow = { id = "com.gradleup.shadow", version.ref = "shadow"}
+
+[libraries]
+paper = { group = "io.papermc.paper", name = "paper-api", version = "1.21.4-R0.1-SNAPSHOT" }

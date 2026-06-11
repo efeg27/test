@@ -1,0 +1,9 @@
+name: Test
+main: org.test.TestPlugin
+version: "${version}"
+api-version: "${apiVersion}"
+author: efeg27
+libraries:
+  - org.jetbrains.kotlin:kotlin-stdlib-jdk8:${kotlinVersion}
+commands:
+
