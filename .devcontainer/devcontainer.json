@@ -1,3 +1,14 @@
 {
-  "postCreateCommand": "sdk install java 21.0.10-ms || true"
+  "postCreateCommand": "sdk install java 21.0.11-ms || true",
+  "customizations": {
+    "vscode": {
+      "extensions": ["fwcd.kotlin"],
+      "settings": {
+        "kotlin.java.home": "/usr/local/sdkman/candidates/java/21.0.11-ms",
+        "kotlin.languageServer.jvmOpts": "-Xmx384m -Xms64m -XX:+UseSerialGC",
+        "java.server.launchMode": "LightWeight",
+        "java.jdt.ls.vmargs": "-Xmx256m -Xms64m -XX:+UseSerialGC"
+      }
+    }
+  }
 }
